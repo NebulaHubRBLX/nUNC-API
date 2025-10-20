@@ -1,0 +1,17 @@
+printSection("📦 INPUT API • Mouse & Keyboard Simulation")
+
+test("isrbxactive", {"isgameactive"}, function()
+	local active = isrbxactive()
+	assert(type(active) == "boolean", "Should return boolean value")
+	return "Window active: " .. tostring(active)
+end, "Input")
+
+test("mouse1click", {}, nil, "Input")
+test("mouse1press", {}, nil, "Input")
+test("mouse1release", {}, nil, "Input")
+test("mouse2click", {}, nil, "Input")
+test("mouse2press", {}, nil, "Input")
+test("mouse2release", {}, nil, "Input")
+test("mousemoveabs", {}, nil, "Input")
+test("mousemoverel", {}, nil, "Input")
+test("mousescroll", {}, nil, "Input")
